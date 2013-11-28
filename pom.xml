@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.allweathercomputing</groupId>
 	<artifactId>restdoc-server-jersey</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<description>RestDoc gateway for Jersey 1.x</description>
 	<distributionManagement>
 		<repository>
