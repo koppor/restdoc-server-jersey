@@ -1,4 +1,4 @@
-package com.allweathercomputing.restdoc.server.jersey;
+package org.restdoc.server.jersey;
 
 /**
  * restdoc-server-jersey
