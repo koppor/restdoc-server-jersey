@@ -1,19 +1,19 @@
-package org.restdoc.server.jersey;
+package org.restdoc.jersey.server;
 
 /**
  * restdoc-server-jersey
- *
- * Based on org.restdoc.cxf.RestDocFeature by thoeger, restdoc.org
+ * 
+ * Based on org.restdoc.cxf.RestDocFeature by thoeger, restdoc.org 
  * This is a minimal stripped-down version tested with Winery
- *
+ * 
  * Copyright (C) 2013 Oliver Kopp
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
  * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -51,7 +51,8 @@ public abstract class RestDocFeature implements ContainerResponseFilter {
 		return "";
 	}
 	
-	public ContainerResponse filter(ContainerRequest request, ContainerResponse response) {
+	@Override
+	public final ContainerResponse filter(ContainerRequest request, ContainerResponse response) {
 		if (request.getMethod().equals(RestDocFeature.HTTP_METHOD)) {
 			final String decodedPath = request.getPath(true);
 			// we have to prepend a "/" as the path does not contain a "/", but RestDoc expects one
