@@ -31,7 +31,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.build.timestamp.format>yyyyMMdd-HHmmss</maven.build.timestamp.format>
 		<jersey.version>1.17.1</jersey.version>
-		<restdoc.version>1.7.0</restdoc.version>
+		<restdoc.version>1.7.1</restdoc.version>
 	</properties>
 
 	<developers>
